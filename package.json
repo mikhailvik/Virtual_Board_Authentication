@@ -1,0 +1,33 @@
+{
+  "name": "virtual_board_authentication",
+  "version": "1.0.0",
+  "description": "Authentication API for Virtual Board project",
+  "main": "index.js",
+  "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "node src/server.js",
+  "dev": "nodemon -L src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikhailvik/Virtual_Board_Authentication.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikhailvik/Virtual_Board_Authentication/issues"
+  },
+  "homepage": "https://github.com/mikhailvik/Virtual_Board_Authentication#readme",
+  "dependencies": {
+    "@prisma/client": "^6.17.1",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prisma": "^6.17.1"
+  }
+}

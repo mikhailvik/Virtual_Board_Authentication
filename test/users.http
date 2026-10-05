@@ -1,0 +1,31 @@
+@API_URL = http://localhost:8080
+
+### Create new user!
+POST {{API_URL}}/users
+Content-Type: application/json
+
+{
+    "email": "test@virtualboard.com",
+    "name": "Test User",
+    "password": "Password123"
+}
+
+
+### Login
+POST {{API_URL}}/users/login
+Content-Type: application/json
+
+{
+    "email": "test@virtualboard.com",
+    "password": "Password123"
+}
+
+
+
+### My test missing fields
+POST {{API_URL}}/users
+Content-Type: application/json
+
+{
+    "email": "new@virtualboard.com"
+}
